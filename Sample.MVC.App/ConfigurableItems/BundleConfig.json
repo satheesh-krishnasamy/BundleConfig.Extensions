@@ -1,0 +1,52 @@
+[
+  {
+    "Path": "~/bundles/jquery",
+    "CdnPath": null,
+    "CdnFallbackExpression": null,
+    "Transforms": [ {} ],
+    "Orderer": {},
+    "Builder": {},
+    "EnableFileExtensionReplacements": true,
+    "ConcatenationToken": ";\r\n"
+  },
+  {
+    "Path": "~/bundles/jqueryval",
+    "CdnPath": null,
+    "CdnFallbackExpression": null,
+    "Transforms": [ {} ],
+    "Orderer": {},
+    "Builder": {},
+    "EnableFileExtensionReplacements": true,
+    "ConcatenationToken": ";\r\n"
+  },
+  {
+    "Path": "~/bundles/modernizr",
+    "CdnPath": null,
+    "CdnFallbackExpression": null,
+    "Transforms": [ {} ],
+    "Orderer": {},
+    "Builder": {},
+    "EnableFileExtensionReplacements": true,
+    "ConcatenationToken": ";\r\n"
+  },
+  {
+    "Path": "~/bundles/bootstrap",
+    "CdnPath": null,
+    "CdnFallbackExpression": null,
+    "Transforms": [ {} ],
+    "Orderer": {},
+    "Builder": {},
+    "EnableFileExtensionReplacements": true,
+    "ConcatenationToken": ";\r\n"
+  },
+  {
+    "Path": "~/Content/css",
+    "CdnPath": null,
+    "CdnFallbackExpression": null,
+    "Transforms": [ {} ],
+    "Orderer": {},
+    "Builder": {},
+    "EnableFileExtensionReplacements": true,
+    "ConcatenationToken": null
+  }
+]
