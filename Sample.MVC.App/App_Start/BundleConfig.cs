@@ -14,9 +14,6 @@ namespace Sample.MVC.App
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js",
-                        "~/Scripts/jquery-UI-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -33,9 +30,8 @@ namespace Sample.MVC.App
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
-            var bundlesRetrieved = bundles.GetRegisteredBundles();
-            var stringBundle = JsonConvert.SerializeObject(bundlesRetrieved);
 
+            #region JS bundles
             IList<BundleDefinitionJson> bundleConfigJsonList = new List<BundleDefinitionJson>();
             bundleConfigJsonList.Add(new BundleDefinitionJson()
             {
@@ -50,12 +46,54 @@ namespace Sample.MVC.App
             bundleConfigJsonList.Add(new BundleDefinitionJson()
             {
                 BundleContentType = BundleConfigExtensions.Model.BundleType.Javascript,
-                BundleVirtualPathOrName = "~/bundles/jquery",
+                BundleVirtualPathOrName = "~/bundles/jqueryval",
                 FilesVirtualPath = new List<BundleFileDetails>()
             {
-                new BundleFileDetails(){InputFilePath =  "~/Scripts/jquery-{version}.js", OrderInTheBundle =1 }
+                new BundleFileDetails(){InputFilePath =  "~/Scripts/jquery.validate*", OrderInTheBundle =1 }
             }
             });
+
+            bundleConfigJsonList.Add(new BundleDefinitionJson()
+            {
+                BundleContentType = BundleConfigExtensions.Model.BundleType.Javascript,
+                BundleVirtualPathOrName = "~/bundles/modernizr",
+                FilesVirtualPath = new List<BundleFileDetails>()
+            {
+                new BundleFileDetails(){InputFilePath =  "~/Scripts/modernizr-*", OrderInTheBundle =1 }
+            }
+            });
+
+            bundleConfigJsonList.Add(new BundleDefinitionJson()
+            {
+                BundleContentType = BundleConfigExtensions.Model.BundleType.Javascript,
+                BundleVirtualPathOrName = "~/bundles/bootstrap",
+                FilesVirtualPath = new List<BundleFileDetails>()
+            {
+                new BundleFileDetails(){InputFilePath =  "~/Scripts/bootstrap.js", OrderInTheBundle =1 }
+            }
+            });
+
+            var stringJSBundles = JsonConvert.SerializeObject(bundleConfigJsonList);
+
+            #endregion JS bundles
+
+
+            #region CSS bundles
+            IList<BundleDefinitionJson> cssBundleConfigJsonList = new List<BundleDefinitionJson>();
+            cssBundleConfigJsonList.Add(new BundleDefinitionJson()
+            {
+                BundleContentType = BundleConfigExtensions.Model.BundleType.CascadedStyleSheet,
+                BundleVirtualPathOrName = "~/Content/css",
+                FilesVirtualPath = new List<BundleFileDetails>()
+            {
+                new BundleFileDetails(){InputFilePath =  "~/Content/bootstrap.css", OrderInTheBundle =1 },
+                new BundleFileDetails(){InputFilePath =  "~/Content/site.css", OrderInTheBundle = 2 }
+            }
+            });
+
+            var stringCssBundles = JsonConvert.SerializeObject(cssBundleConfigJsonList);
+
+            #endregion CSS bundles
         }
     }
 }

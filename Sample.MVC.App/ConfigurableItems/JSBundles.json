@@ -1,0 +1,46 @@
+[
+  {
+    "BundleContentType": 1,
+    "BundleVirtualPathOrName": "~/bundles/jquery",
+    "FilesVirtualPath": [
+      {
+        "InputFilePath": "~/Scripts/jquery-{version}.js",
+        "OrderInTheBundle": 1
+      }
+    ],
+    "BundleDirectoryConfig": null
+  },
+  {
+    "BundleContentType": 1,
+    "BundleVirtualPathOrName": "~/bundles/jqueryval",
+    "FilesVirtualPath": [
+      {
+        "InputFilePath": "~/Scripts/jquery.validate*",
+        "OrderInTheBundle": 1
+      }
+    ],
+    "BundleDirectoryConfig": null
+  },
+  {
+    "BundleContentType": 1,
+    "BundleVirtualPathOrName": "~/bundles/modernizr",
+    "FilesVirtualPath": [
+      {
+        "InputFilePath": "~/Scripts/modernizr-*",
+        "OrderInTheBundle": 1
+      }
+    ],
+    "BundleDirectoryConfig": null
+  },
+  {
+    "BundleContentType": 1,
+    "BundleVirtualPathOrName": "~/bundles/bootstrap",
+    "FilesVirtualPath": [
+      {
+        "InputFilePath": "~/Scripts/bootstrap.js",
+        "OrderInTheBundle": 1
+      }
+    ],
+    "BundleDirectoryConfig": null
+  }
+]
