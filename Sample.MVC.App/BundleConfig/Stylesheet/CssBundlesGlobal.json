@@ -1,6 +1,6 @@
 [
   {
-    "BundleContentType": 2,
+    "BundleContentType": "CascadedStyleSheet",
     "BundleVirtualPathOrName": "~/Content/css",
     "FilesVirtualPath": [
       {
@@ -11,7 +11,6 @@
         "InputFilePath": "~/Content/site.css",
         "OrderInTheBundle": 2
       }
-    ],
-    "BundleDirectoryConfig": null
+    ]
   }
 ]

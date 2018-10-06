@@ -3,29 +3,60 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>MVC Bundle configuration extension methods</h1>
+    <p class="lead">This is a free nuget package for managign the CSS and JavaScript bundles in json file.</p>
+    <p>The only intension of this nuget library is to maintain the bundle config files in json file like in Asp.Net Core.</p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <h2>Benefits</h2>
+        <ul>
+            <li>
+                <p>
+                    This nuget package helps you to keep the MVC bundles in json files.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Avoid lengthier C# code lines to add the MVC bundles.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Organize the MVC bundles like views, scripts, and css folders.
+                </p>
+            </li>
+        </ul>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Suggestions</h2>
+        <ul>
+            <li>
+                <p>Do not have many bundles. This may add additional overhead of maintaining it.</p>
+            </li>
+        </ul>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Limitations</h2>
+        <ul>
+            <li>
+                <p>
+                    The changes made to the bundle files will not be auto-refreshed without restarting the web application.
+                    This auto-refresh MVC bundles on bundle file change feature is not implemented since implementing this feature requires using file-watcher and doing this refreshing job in background. Doing so may result in unpredictable effects.
+                </p>
+            </li>
+            <li>
+                For example,
+                <ul>
+                    <li>
+                        The refreshed/updated bundle may be in use for a current request. Updating it will require the bundle to be removed and re-added to the MVC bundle table.
+                    </li>
+                    <li>
+                        IIS may go for sleep when there are no more active requests for certain amount of time. The background thread which does this file-watch and updating the MVC bundle may also go for sleep or killed by IIS.
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>

@@ -1,15 +1,13 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
 
 namespace BundleConfigExtensions.Model
 {
     /// <summary>
     /// Bundle type
     /// </summary>
+    [JsonConverter(typeof(StringEnumConverter))]
     public enum BundleType
     {
         /// <summary>
@@ -25,7 +23,6 @@ namespace BundleConfigExtensions.Model
     /// <summary>
     /// Bundle class representing a bundle configuration in json file
     /// </summary>
-    [JsonObject]
     public class BundleDefinitionJson
     {
         public BundleType BundleContentType { get; set; }
@@ -33,6 +30,7 @@ namespace BundleConfigExtensions.Model
         public IList<BundleFileDetails> FilesVirtualPath { get; set; }
         public BundleDirectory BundleDirectoryConfig { get; set; }
     }
+
 
     public class BundleFileDetails
     {

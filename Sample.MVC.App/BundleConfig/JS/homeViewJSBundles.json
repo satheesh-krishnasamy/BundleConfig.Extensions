@@ -1,0 +1,11 @@
+[
+  {
+    "BundleContentType": "Javascript",
+    "BundleVirtualPathOrName": "~/bundles/home",
+    "FilesVirtualPath": [
+      {
+        "InputFilePath": "~/Scripts/home/*.js"
+      }
+    ]
+  }
+]
