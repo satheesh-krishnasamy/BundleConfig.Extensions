@@ -18,6 +18,8 @@ namespace Sample.MVC.App
             string appRootPath = HttpContext.Current.Server.MapPath("\\");
             string bundleConfigFolderPath = Path.Combine(appRootPath, "BundleConfig");
             bundles.LoadBundleConfigFrom(bundleConfigFolderPath, "*.json", true, true);
+
+            #region Default way
             //bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
             //            "~/Scripts/jquery-{version}.js"));
 
@@ -25,8 +27,6 @@ namespace Sample.MVC.App
             //bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
             //            "~/Scripts/jquery.validate*"));
 
-            //// Use the development version of Modernizr to develop with and learn from. Then, when you're
-            //// ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
             //bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
             //            "~/Scripts/modernizr-*"));
 
@@ -37,6 +37,17 @@ namespace Sample.MVC.App
             //          "~/Content/bootstrap.css",
             //          "~/Content/site.css"));
 
+            //bundles.Add(new StyleBundle("~/bundles/blog").Include(
+            //          "~/scripts/blogs/blogPageEvents.js",
+            //          "~/scripts/blogs/blogServices.js",
+            //          "~/Content/blogController.js"));
+
+            //bundles.Add(new StyleBundle("~/bundles/home").Include(
+            //          "~/scripts/home/homeEvents.js",
+            //          "~/scripts/home/homeController.js",
+            //          "~/Content/home/homeServices.js"));
+
+            #endregion Default way
 
             //#region JS bundles
             //IList<BundleDefinitionJson> bundleConfigJsonList = new List<BundleDefinitionJson>();

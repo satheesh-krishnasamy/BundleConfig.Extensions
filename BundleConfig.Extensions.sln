@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Mvc.Core.App", "Samp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BundleConfigExtensions", "BundleConfigExtensions\BundleConfigExtensions.csproj", "{56B24B2D-F121-4AF3-998B-B18D5460A261}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BundleConfig.Extensions.Tests", "BundleConfig.Extensions.Tests\BundleConfig.Extensions.Tests.csproj", "{C0FB3394-9889-4E0E-8607-881A2B1AF4B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{56B24B2D-F121-4AF3-998B-B18D5460A261}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56B24B2D-F121-4AF3-998B-B18D5460A261}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56B24B2D-F121-4AF3-998B-B18D5460A261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0FB3394-9889-4E0E-8607-881A2B1AF4B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0FB3394-9889-4E0E-8607-881A2B1AF4B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0FB3394-9889-4E0E-8607-881A2B1AF4B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0FB3394-9889-4E0E-8607-881A2B1AF4B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

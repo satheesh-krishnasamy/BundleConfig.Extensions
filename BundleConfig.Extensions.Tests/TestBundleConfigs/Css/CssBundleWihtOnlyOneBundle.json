@@ -1,0 +1,16 @@
+[
+  {
+    "BundleContentType": "CascadedStyleSheet",
+    "BundleVirtualPathOrName": "~/Content/css",
+    "FilesVirtualPath": [
+      {
+        "InputFilePath": "~/Content/bootstrap.css",
+        "OrderInTheBundle": 1
+      },
+      {
+        "InputFilePath": "~/Content/site.css",
+        "OrderInTheBundle": 2
+      }
+    ]
+  }
+]

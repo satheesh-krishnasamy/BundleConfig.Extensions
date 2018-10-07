@@ -1,0 +1,20 @@
+[
+  {
+    "BundleContentType": "Javascript",
+    "BundleVirtualPathOrName": "~/bundles/blog",
+    "FilesVirtualPath": [
+      {
+        "InputFilePath": "~/Scripts/blogs/blogController.js",
+        "OrderInTheBundle": 1
+      },
+      {
+        "InputFilePath": "~/Scripts/blogs/blogPageEvents.js",
+        "OrderInTheBundle": 2
+      },
+      {
+        "InputFilePath": "~/Scripts/blogs/blogServices.js",
+        "OrderInTheBundle": 3
+      }
+    ]
+  }
+]

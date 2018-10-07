@@ -1,0 +1,11 @@
+[
+  {
+    "BundleContentType": "Javascript",
+    "BundleVirtualPathOrName": "~/bundles/blog",
+    "FilesVirtualPath": [
+      {
+        "InputFilePath": "~/Scripts/blogs/blog1.js"
+      }
+    ]
+  }
+]
